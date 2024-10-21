@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DwarvenCrown</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./Images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./Images/favicon/favicon-32x32.png" alt="DwarvenCrown Icon" style="height: 40px; vertical-align: middle; margin-right: 10px;">
+            DwarvenCrown
+        </div>
+        <div class="logo"></div>
+        <div class="logo" id="backtotop"></div>
+        <div class="nav-items">
+            <a href="index.html">HOME</a>
+            <a href="What.html">WHAT ARE DWARVES?</a>
+            <a href="about.html">ABOUT THE FORGE</a>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-container">
+            <div class="main-body">
+                <h1 id="whataredwarves" style="text-align: center;">What are Dwarves?</h1>
+                <p class="two center">Kingdoms rich in ancient ores and beautiful halls carved into the roots of rock and mountains. The Dwarves themselves have a <b>Commitment</b> to their clan and their tradition. With a warhammer at their back, a snide remark at their mouths and sweat  in their brows they greet any situation with endurance, loyalty and hardwork.</p>
+                <img src="./Images/dwarf1.png" alt="Dwarf Image" class="center">
+                <h2 class="center" id="stoutandproud">Stout and Proud</h2>
+                <p class="two center">Dwarves are known to be quite bold and hardy. Stout and skilled in many ways, from being warriors, to miners, to workers of stone and metal. We stand under 5 feet tall, but weigh as much as a human standing two feet taller. Our courage and endurance easily matching any of the taller folk. They have many things to say,  even to the point of ignorance in the emotions of others, but that doesn't stop them from being loyal and trustworthy.</p>
+                <img src="./Images/dwarf2.png" alt="Dwarf Image" class="center">
+                <h2 id="longmemory">A long memory means a Long Grudge</h2>
+                <p class="two center">Dwarves can live to be about 400 years. They often see the world in a very different light due to having lived so long. Their fixation on tradition helped them retain information from decades ago. Dwarves are solid and enduring like the mountains that they love so much. Weathering the passage of the times with endurance and stoicism that reminds you of bedrock. This often leads them to have lots of disagreements with each other and other races, as they do not hold kindly to being wronged. Their mind often hold grudges for both serious and trivial matters, to a fault.</p>
+                <img src="./Images/dwarf3.png" alt="Dwarf Image" class="center">
+                <h2 id="slowtotrust">Slow to Trust</h2>
+                <p class="two center">dwarves are quite loyal. They stick true to their word and are decisive in action. This is to a point of stubbornness that many dwarves often have. They have a strong sense of justice. More often than not Dwarves do their best to keep to their own circle. However, once their loyalty is earned, it's hard for others to dissuade this loyalty. </p>
+                <img src="./Images/dwarf4.png" alt="Dwarf Image" class="center">
+                <h2 id="burdenedwithpurpose">All Dwarves are Burdened with Purpose that Defines</h2>
+                <p class="two center">It is well known that all dwarves are very prideful of their craftmanship and their place in this world. Work for them is a way of life and their pride will not let them cease their life's work for anything less than death. They see this as following their gods footsteps. This purpose they choose to have urges them to learn all the different professions of the clan and to them, it is one's responsibility to oneself to learn all forms of crafts, no matter how complex.</p>
+                <img src="./Images/Dwarf blacksmith.png" alt="Dwarf blacksmith" class="center">
+                <h6 class="center"><b>This work is purely a work of fiction and is not a basis for any real-life application. It is a school project and not used for monetary gain.</b></h6>
+            </div>
+            <aside class="sidebar">
+                <h2>Table of Contents</h2>
+                <ul>
+                    <li><a href="#backtotop">Back to top</a></li>
+                    <li><a href="#whataredwarves">What are Dwarves?</a></li>
+                    <li><a href="#stoutandproud">Stout and Proud</a></li>
+                    <li><a href="#longmemory">A long Memory means a long Grudge</a></li>
+                    <li><a href="#slowtotrust">Slow to Trust</a></li>
+                    <li><a href="#burdenedwithpurpose">All Dwarves are burdened with Purpose that Defines </a></li>
+                    
+                </ul>
+            </aside>
+            </div>
+        </div>
+    </section>
+    <script>
+        let lastScrollTop = 0;
+        const sidebar = document.querySelector('.sidebar');
+
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // Scrolling down
+                sidebar.classList.add('hidden');
+            } else {
+                // Scrolling up
+                sidebar.classList.remove('hidden');
+            }
+            
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+        });
+    </script>
+</body>
+</html>
